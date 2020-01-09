@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Music</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+      @using Music.Models;
+  </head>
+  <body>
+   <ul>
+  @foreach (Record record in Model)
+  {
+    <li>@record.Title</li>
+  }
+</ul>
+<a href="/record/new">Add a new record.</a>
+</body>
+</html>
